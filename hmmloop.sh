@@ -1,21 +1,35 @@
-#For each of the 6 transcripts make a muscle alignment from your downloaded protein sequences
+#For each of the 6 transcripts make a muscle alignment from your downloaded protein se$
 
-for file in sequence*
-do
-  	../muscle3.8.31_i86linux64 -in $file -out $file-align
-done
+#for file in sequence*
+#do
+#	../muscle3.8.31_i86linux64 -in $file -out $file-align
+#done
 
 #Construct 6 HMM protein models using hmm build
 
-for file in *.fasta-align
-do
-  	../local/bin/hmmbuild $file.hmm $file
-done
+#for file in *.fasta-align
+#do
+#	../local/bin/hmmbuild $file.hmm $file
+#done
 
 #Search all 4 translated RNAseqfiles for each of the 6 HMM models using hmmsearch
 
+RNAfiles=$(ls *| grep ^[CO])
+
+echo $RNAfiles
+
 for file in *.hmm
 do
-  	../local/bin/hmmsearch --tblout ResultsHMM.csv $file [CO]*
+  	echo $file "loop 1"
+        for bio in $RNAfiles
+        do
+          	echo $bio "loop 2"
+                echo $file "loop 2"
+                ../local/bin/hmmsearch --tblout $bioResultsHMM.csv $file $RNAfiles
+        done
 done
+
+
+
+
 
