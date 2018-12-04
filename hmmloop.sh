@@ -24,7 +24,8 @@ do
         for bio in $RNAfiles
         do
                 ../local/bin/hmmsearch --tblout $bioResultsHMM.csv $file $bio
-        done
+       		cat $bio | grep -v "#" | wc -l echo $bio | grep -v "total" >> RNAfilematches.csv
+	 done
 done
 
 
