@@ -20,12 +20,10 @@ echo $RNAfiles
 
 for file in *.hmm
 do
-  	echo $file "loop 1"
+  	echo $file
         for bio in $RNAfiles
         do
-          	echo $bio "loop 2"
-                echo $file "loop 2"
-                ../local/bin/hmmsearch --tblout $bioResultsHMM.csv $file $RNAfiles
+                ../local/bin/hmmsearch --tblout $bioResultsHMM.csv $file $bio
         done
 done
 
