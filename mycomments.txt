@@ -11,3 +11,19 @@ For your csv files, one suggestion would be to make sure they are comma delimite
 
 Expression Levels Graph:
 Based on the journal article, instead of having control/obese bars on the x axis, I think you may need the protein sequences incorporated. Also, it would be helpful to label the y axis.
+
+Michaels Comments:
+
+helioser
+
+Their shell script containing the for loop to make the table seems good. 
+
+
+
+Expression Level Graph
+
+Their expression level graph needs the six proteins that were found on the NCBI website. Maybe look at the graph's included in the Kuhns paper and model how you will format yours off of theirs. 
+
+
+
+
