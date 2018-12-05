@@ -1,0 +1,10 @@
+COMMENTS: 
+
+1. Making a table including the top hit for each transcript - six_AA: the group did a
+good job creating this code since it produces a table including only the name of the 
+nucleotides, instead of the entire lines 
+
+2. "Use bash script to loop over the 6 transcript files and 4 "RNAseq files," executing 
+these commands" - your helioser.sh file does not include the code you used for the first 
+two parts of this step - using muscle and hmmbuild.
+
