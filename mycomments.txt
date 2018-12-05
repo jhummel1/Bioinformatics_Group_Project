@@ -1,0 +1,13 @@
+Alex’s Comments:
+
+helioser.sh
+It is efficient that you used a for loop within a for loop and executed multiple commands within the inner for loop.
+
+Six_AA.ipynb
+This code is good because it extracts the specific protein names for the top 6 hits, which is more specific than the entire line of data for the top 6 hits.
+
+Experiment Folder
+For your csv files, one suggestion would be to make sure they are comma delimited. This will help with graphing/inputing the data into python. If you open in excel, it does not show up in separate columns. We used ’s/ /,/g’ to add commas instead of spaces to fix our files.
+
+Expression Levels Graph:
+Based on the journal article, instead of having control/obese bars on the x axis, I think you may need the protein sequences incorporated. Also, it would be helpful to label the y axis.
