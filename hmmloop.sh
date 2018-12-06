@@ -23,10 +23,10 @@ do
   	echo $file
         for bio in $RNAfiles
         do
-                ../local/bin/hmmsearch --tblout $bioResultsHMM.csv $file $bio
-       		a=$(cat $bio | grep -v "#" | wc -l echo $bio | grep -v "total")
-		b=$(echo $file)
-		echo $a $b >> RNAfilematches.csv
+                ../local/bin/hmmsearch --tblout bioResultsHMM.csv $file $bio
+       		a=$(cat $bio | grep -v "#" | wc -l echo bioResultsHMM.csv | grep -v "total")
+		b=$(echo $bio $file)
+		echo $a $b >> RNAfilematches3.csv
 	 done
 done
 
