@@ -6,23 +6,14 @@ Created on Sun Dec  2 14:10:14 2018
 @author: atatarian
 """
 
-import matplotlib
-import numpy
+#Manipulating the original data file in Unix before graphing:
+#cat RNAfileMatches3.csv | sed ’s/ /,/g’ | cut -d , -f 1,3,4 > RNAfileMatches4.csv
+
+import numpy as np
 import pandas
 from plotnine import *
-exp=pandas.read_csv("RNAfileMatches2.csv",sep=",",header=1,usecols=['Matches', 'RNA', 'Sequence'])
+exp=pandas.read_csv("RNAfileMatches4.csv",sep=",",header=0,usecols=['Matches', 'RNA', 'Protein'])
 
 print exp
 
-#print (exp['RNA'] == "Control1protein.fasta" & "Control2protein.fasta")
-
-
-
-#a=ggplot(exp,aes(x="Protein",y="Expression Level"))+geom_point(color="blue",shape=4,size=3)
-
-#print a+theme_classic()+xlab("displacment (l)")+ylab("Expression Level")
-
-#color for normal 
-#color for obese
-
-#in the csv file, we need to distinguish which normal/obese correlates to which protein.
+print ggplot(exp, aes(x="Protein", y="Matches",fill="RNA"))+geom_bar(stat='identity',position='dodge')+theme(axis_text_x=element_text(rotation=35,ha='right'))
