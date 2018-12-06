@@ -25,7 +25,7 @@ Expression Level Graph
 Their expression level graph needs the six proteins that were found on the NCBI website. Maybe look at the graph's included in the Kuhns paper and model how you will format yours off of theirs. 
 
 
-Jessica's Comments
+Jessica's Comments:
 
 1. Making a table including the top hit for each transcript - six_AA: the group did a
 good job creating this code since it produces a table including only the name of the
