@@ -1,0 +1,10 @@
+#Output from shortanswer2.sh
+
+#Sequence 1 Protein Name: Yc2
+#The Sequence5Insect.fasta-align.hmm is mislabed. It should read Sequence9Insect.fasta-align.hmm
+#Sequence 9 Protein Name: Lhx2
+
+13 ShortAnswer2HMM.csv Control1protein.fasta Sequence1Insect.fasta-align.hmm
+28 ShortAnswer2HMM.csv Control1protein.fasta Sequence5Insect.fasta-align.hmm
+
+
