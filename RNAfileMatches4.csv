@@ -1,3 +1,4 @@
+Matches,RNA,Protein
 28,Control1protein.fasta,sequence10.fasta-align.hmm
 33,Control2protein.fasta,sequence10.fasta-align.hmm
 113,Obese1protein.fasta,sequence10.fasta-align.hmm
