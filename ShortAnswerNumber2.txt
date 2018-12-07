@@ -1,0 +1,18 @@
+Answer to #2
+
+Ran shell script in directory with only Control1 file and the two sequence files (for proteins Yc2 and Lhx2) 
+
+We built our HMM protein model using Insects and saw that 
+
+#Sequence 1 Protein Name: Yc2
+#The Sequence5Insect.fasta-align.hmm is mislabeled. It should read Sequence9Insect.fasta-align.hmm
+#Sequence 9 Protein Name: Lhx2
+
+13 ShortAnswer2HMM.csv Control1protein.fasta Sequence1Insect.fasta-align.hmm
+28 ShortAnswer2HMM.csv Control1protein.fasta Sequence5Insect.fasta-align.hmm
+
+25,Control1protein.fasta,Yc2
+28,Control1protein.fasta,Lhx2
+#The above two lines come from RNAfilesMatchesFinal.csv
+
+We chose to compare the control1 Yc2 and Lhx2 proteins in humans to the same proteins in insects, an extremeley distant phylogenetic ancestor of humans. As we can see, the number of hits for the Yc2 protein in the control sequence for humans (25) was nearly double that of the control sequence for insects (13). However, the number of hits for the Lhx2 were the same for insects and humans at 28. Quality of hits …
