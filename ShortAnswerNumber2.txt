@@ -15,4 +15,19 @@ We built our HMM protein model using Insects and saw that
 28,Control1protein.fasta,Lhx2
 #The above two lines come from RNAfilesMatchesFinal.csv
 
-We chose to compare the control1 Yc2 and Lhx2 proteins in humans to the same proteins in insects, an extremeley distant phylogenetic ancestor of humans. As we can see, the number of hits for the Yc2 protein in the control sequence for humans (25) was nearly double that of the control sequence for insects (13). However, the number of hits for the Lhx2 were the same for insects and humans at 28. Quality of hits …
+We chose to compare the control1 Yc2 and Lhx2 proteins in humans to the same proteins
+ in insects, an extremeley distant phylogenetic ancestor of humans. As we can see, the
+ number of hits for the Yc2 protein in the control sequence for humans (25) was nearly
+ double that of the control sequence for insects (13). However, the number of hits for
+ the Lhx2 were the same for insects and humans at 28. 
+
+E-value Sequence 1: 7.8e-141
+E-value Sequence 1 Insect: None
+E-value Sequence 9: 5.6e-271
+E-value Sequence 9 Insect: 4.9e-271
+
+The e-value for Sequence 9 was greater for insects than for rodents. There was no e-value
+listed for Sequence 1 (insects) because there were not enough hits to calculate the value, however
+because the e-value for Sequence 9 insects was greater than for rodents, we can infer that the e-value
+for Sequence 1 insects would have also been greater than that for rodents. This result is not 
+unexpected because humans and insects are much more distantly related than humans and rodents. 
